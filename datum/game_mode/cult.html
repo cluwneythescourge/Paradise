@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8" />
+    
+    <base href="../../" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="extra.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>&#x2F;datum&#x2F;game_mode&#x2F;cult - Paradise Code Docs</title>
+    
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="index.html" class="brand-logo">&nbsp;Paradise Code Docs</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                
+                <li><a href="index.html#modules">Modules</a></li>
+                <li><a href="index.html#types">Types</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+<h1>cult <aside>/<a href="datum.html">datum</a>/<a href="datum/game_mode.html">game_mode</a>/<a href="datum/game_mode/cult.html">cult</a></aside>
+        
+    
+            <a href="https://github.com/ParadiseSS13/Paradise/blob/3476bb6a646832f9577aad3e30489cea74a7d9b3/code/game/gamemodes/cult/cult.dm#L48">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;gamemodes&#x2F;cult&#x2F;cult.dm 48"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Procs</h2><a href="datum/game_mode/cult.html#proc">Jump To Proc Details</a></td></tr>
+            <tr><th><a href="datum/game_mode/cult.html#proc/threshold_check">threshold_check</a></th><td>Decides at the start of the round how many conversions are needed to rise/ascend.</td></tr></table><h2 id="proc">Proc Details</h2><h5 id="proc/threshold_check"><aside class="declaration">proc </aside>threshold_check<aside>() 
+        
+    
+            <a href="https://github.com/ParadiseSS13/Paradise/blob/3476bb6a646832f9577aad3e30489cea74a7d9b3/code/game/gamemodes/cult/cult.dm#L111">
+        <img src="git.png" width="16" height="16" title="code&#x2F;game&#x2F;gamemodes&#x2F;cult&#x2F;cult.dm 111"/></a></aside>
+        </h5>
+        <p>Decides at the start of the round how many conversions are needed to rise/ascend.</p>
+<p>The number is decided by (Percentage * (Players - Cultists)), so for example at 110 players it would be 11 conversions for rise. (0.1 * (110 - 4))
+These values change based on population because 20 cultists are MUCH more powerful if there's only 50 players, compared to 120.</p>
+<p>Below 100 players, <a href="code/__DEFINES/cult.html#define/CULT_RISEN_LOW" title="CULT_RISEN_LOW">CULT_RISEN_LOW</a> and <a href="code/__DEFINES/cult.html#define/CULT_ASCENDANT_LOW" title="CULT_ASCENDANT_LOW">CULT_ASCENDANT_LOW</a> are used.
+Above 100 players, <a href="code/__DEFINES/cult.html#define/CULT_RISEN_HIGH" title="CULT_RISEN_HIGH">CULT_RISEN_HIGH</a> and <a href="code/__DEFINES/cult.html#define/CULT_ASCENDANT_HIGH" title="CULT_ASCENDANT_HIGH">CULT_ASCENDANT_HIGH</a> are used.</p></main>
+    <footer class="page-footer transparent">
+        <div class="footer-copyright blue">
+            <div class="container">
+                
+                paradise.dme at commit
+                <a class="white-text" href="https://github.com/ParadiseSS13/Paradise/tree/3476bb6a646832f9577aad3e30489cea74a7d9b3">3476bb6</a>
+                on branch master &mdash; <a class="white-text" href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.2.1</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
